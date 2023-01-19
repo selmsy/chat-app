@@ -1,12 +1,24 @@
 import React from 'react';
 import './styles/main.scss';
 import 'rsuite/dist/rsuite.min.css';
+import {Routes, Route} from 'react-router';
+import SignIn from './pages/SignIn';
+
+import Home from './pages/Home';
+
 
 function App() {
   return (
-    <div>
-      Hello
-    </div>
+    <Routes>
+     
+    <Route exact path='/signin' element={<SignIn/>}/>
+
+  
+      
+      <Route exact path='/' element={<Home/>}/>
+
+      
+    </Routes>
   );
 }
 
