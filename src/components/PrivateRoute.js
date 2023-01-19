@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Navigate, Route} from 'react-router';
 
 
-function PrivateRoute({children, ...routeProps}) {
-  const profile = false;
+function PrivateRoute({children}) {
+  const profile = useContext()
   if(!profile){
     return <Navigate to="/signin" />
   }
