@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/main.scss';
-import 'rsuite/dist/rsuite.min.css';
+import 'rsuite/dist/styles/rsuite-default.css';
 import {Routes, Route} from 'react-router';
 import SignIn from './pages/SignIn';
 
